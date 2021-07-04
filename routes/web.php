@@ -26,7 +26,7 @@ use App\Http\Controllers\AdminController;
 
 // });
 
-Route::get('/', [HomeController::class, 'index'])->name('');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/products', [HomeController::class, 'products'])->name('products');
 Route::get('/ruangbelajar', [HomeController::class, 'product_ruangbelajar'])->name('ruangbelajar');

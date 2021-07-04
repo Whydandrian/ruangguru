@@ -15,4 +15,19 @@ class HomeController extends Controller
     {
         return view('frontend.products');
     }
+
+    public function product_ruangbelajar()
+    {
+        
+    }
+
+    public function product_skillacademy()
+    {
+        
+    }
+
+    public function product_englishacademy()
+    {
+        
+    }
 }
