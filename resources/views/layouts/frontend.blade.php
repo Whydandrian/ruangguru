@@ -40,7 +40,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <body class="antialiased">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: white; height:85px; padding: 30px; box-shadow: 0.2px 1px 5px #cac9c9;">
             <div class="container-fluid">
-              <a class="navbar-brand ms-4 px-6" href="#"><img src="https://www.ruangguru.com/hubfs/OPTIMIZE/logo%20rg.svg" alt=""></a>
+              <a class="navbar-brand ms-4 px-6" href="{{route('home')}}"><img src="https://www.ruangguru.com/hubfs/OPTIMIZE/logo%20rg.svg" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
