@@ -70,6 +70,7 @@
                                 <div class="text-secondary ">Data login untuk Ops Team Ruangguru</div>
                                 <div class="text-secondary fst-italic">Email : opsteam.admin@ruangguru.com</div>
                                 <div class="text-secondary fst-italic">Password : Enterprise2021</div>
+                                <div class="text-danger font-italic">Untuk app di Heroku masih belum terkoneksi ke database</div>
                             </div>
                         </div>
                     </form>
