@@ -37,7 +37,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body class="container">
+      <div class="row">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: white; height:85px; padding: 30px; box-shadow: 0.2px 1px 5px #cac9c9;">
             <div class="container-fluid">
               <a class="navbar-brand ms-4 px-6" href="{{route('home')}}"><img src="https://www.ruangguru.com/hubfs/OPTIMIZE/logo%20rg.svg" alt=""></a>
@@ -91,8 +92,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
               </div>
             </div>
           </nav>
+        </div>
+        <div class="row mt-5">
+          @yield('content')
+        </div>
           
-        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0">
+        {{-- <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0"> --}}
             {{-- @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -106,14 +111,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                     @endauth
                 </div>
             @endif --}}
-
-
-            
-              @yield('content')
-            
-            
-            
-        </div>
+         {{-- </div> --}}
 
         {{-- Load Bundle CDN Bootstrap --}}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -1,13 +1,13 @@
 @extends('layouts.frontend')
 
 @section('content')
-<div class="row d-flex mt-4 mx-4 justify-content-center">
+<div class="row d-flex mt-4 justify-content-center">
 <div class="row col text-center ">
-  <span class="d-flex px-5 mx-5 mt-4 justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
+  <span class="d-flex mt-4 justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
   <h2>SD, SMP, SMA, dan SMK</h2>
 </div>
-<div class="row px-5 mx-5 mt-4">
-  <div class="col-6 px-4">
+<div class="row mt-4">
+  <div class="col-6">
       <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 750px;">
           <div class="row g-0">
               <div class="col-md-8">
@@ -23,7 +23,7 @@
           </div>
         </div>
   </div>
-  <div class="col-6 px-4">
+  <div class="col-6 ">
       <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 750px;">
           <div class="row g-0">
               <div class="col-md-8">
@@ -40,8 +40,8 @@
         </div>
   </div>
 </div>
-<div class="row  px-5 mx-5">
-  <div class="col-6 px-4">
+<div class="row ">
+  <div class="col-6">
       <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 750px;">
           <div class="row g-0">
               <div class="col-md-8">
@@ -57,7 +57,7 @@
           </div>
         </div>
   </div>
-  <div class="col-6 px-4">
+  <div class="col-6">
       <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 750px;">
           <div class="row g-0">
               <div class="col-md-8">
