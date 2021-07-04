@@ -10,21 +10,21 @@
     <div class="card-body">
       <h5 class="card-title text-white fw-bold">Langganan ruangbelajar</h5>
       <p class="card-text text-white">Akses semua video, soal dan rangkuman dengan berlangganan!</p>
-      <a href="{{route('ruangbelajar')}}" class="btn btn-primary">Daftar</a>
+      <a href="{{route('ruangbelajar')}}" class="btn btn-light">Daftar</a>
     </div>
   </div>
   <div class="card col-3 mx-2 englishskill">
     <div class="card-body">
       <h5 class="card-title text-white fw-bold">English Skill Academy</h5>
       <p class="card-text text-white">Kursus Bahasa inggris interaktif dengan pengajar international</p>
-      <a href="{{route('englishacademy')}}" class="btn btn-primary">Daftar</a>
+      <a href="{{route('englishacademy')}}" class="btn btn-light">Daftar</a>
     </div>
   </div>
   <div class="card col-3 mx-2 skillacademy">
     <div class="card-body">
       <h5 class="card-title text-white fw-bold">Skill Academy</h5>
       <p class="card-text text-white">Tingkatkan technical skill dan softskill untuk mahasiswa, profesional dan umum</p>
-      <a href="{{route('skillacademy')}}" class="btn btn-primary">Daftar</a>
+      <a href="{{route('skillacademy')}}" class="btn btn-light">Daftar</a>
     </div>
   </div>
 </div>

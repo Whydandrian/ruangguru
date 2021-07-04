@@ -5,6 +5,8 @@ use Ixudra\Curl\Facades\Curl;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\OrderController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,9 +32,13 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/products', [HomeController::class, 'products'])->name('products');
 Route::get('/ruangbelajar', [HomeController::class, 'product_ruangbelajar'])->name('ruangbelajar');
-Route::post('/ruangbelajar_add', [HomeController::class, 'form_add']);
+Route::post('/order_ruangbelajar', [OrderController::class, 'store_ruangbelajar'])->name('order-ruangbelajar');
 Route::get('/skillacademy', [HomeController::class, 'product_skillacademy'])->name('skillacademy');
+Route::post('/order_skillacademy', [OrderController::class, 'store_skillacademy']);
 Route::get('/englishacademy', [HomeController::class, 'product_englishacademy'])->name('englishacademy');
+Route::post('/order_englishacademy', [OrderController::class, 'store_englishacademy']);
+
+Route::get('/subscription', [HomeController::class, 'subscription'])->name('subscription');
 
 Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
 

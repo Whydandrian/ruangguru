@@ -31,8 +31,10 @@ class HomeController extends Controller
         return view('frontend.englishacademy');
     }
 
-    public function form_add(Request $request)
+    public function subscription()
     {
-        
+        return view('frontend.subscription');
     }
+
+
 }

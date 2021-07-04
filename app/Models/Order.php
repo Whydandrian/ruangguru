@@ -9,9 +9,9 @@ class Order extends Model
 {
     use HasFactory;
     protected $fillable = [
-    'orderId','packageId',
+    'packageId',
     'customerId',
-    'orderStatus','orderId',
+    'orderStatus',
     ];
     public $timestamps = false;
     public function setUpdatedAt($value)

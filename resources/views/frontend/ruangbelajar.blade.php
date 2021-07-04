@@ -10,18 +10,22 @@
     <div class="col">
       <div class="card shadow p-3 bg-body rounded">
         <div class="card-body border-0">
-          <form >
+          <form method="POST" action="{{ route('order-ruangbelajar') }}" enctype="multipart/form-data">
+            @csrf
             <div class="mb-3">
               <label for="customerName" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Nama lengkap anda">
+              <input type="text" class="form-control form-control-sm  @error('customerName') is-invalid @enderror" name="customerName" id="customerName" placeholder="Nama lengkap anda"value="{{ old('customerName') }}">
+              @error('customerName')<div class="invalid-feedback"> {{ $message }} </div>@enderror
             </div>
             <div class="mb-3">
               <label for="customerEmail" class="form-label">Email</label>
-              <input type="email" class="form-control form-control-sm" id="customerEmail" placeholder="nama@email.com">
+              <input type="email" class="form-control form-control-sm  @error('customerEmail') is-invalid @enderror" name="customerEmail" id="customerEmail" placeholder="nama@email.com"value="{{ old('customerEmail') }}">
+              @error('customerEmail')<div class="invalid-feedback"> {{ $message }} </div>@enderror
             </div>
             <div class="mb-3">
               <label for="customerPhoneNumber" class="form-label">Nomor Telepon</label>
-              <input type="text" class="form-control form-control-sm" id="customerPhoneNumber" placeholder="08XXXXXXXXXX">
+              <input type="text" class="form-control form-control-sm  @error('customerPhoneNumber') is-invalid @enderror" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="08XXXXXXXXXX"value="{{ old('customerPhoneNumber') }}">
+              @error('customerPhoneNumber')<div class="invalid-feedback"> {{ $message }} </div>@enderror
             </div>
             {{-- <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Pilih Kelas</label>
@@ -36,7 +40,8 @@
             </div> --}}
             <div class="mb-3">
               <label for="customerAddress" class="form-label">Alamat Lengkap</label>
-              <textarea class="form-control form-control-sm" id="customerAddress" rows="4"></textarea>
+              <textarea class="form-control form-control-sm  @error('customerAddress') is-invalid @enderror" name="customerAddress" id="customerAddress" rows="4">{{ old('customerAddress') }}</textarea>
+              @error('customerAddress')<div class="invalid-feedback"> {{ $message }} </div>@enderror
             </div> 
             <button type="submit" class="btn btn-primary">Lanjutkan</button>
           </form>
