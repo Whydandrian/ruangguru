@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubscriptionsTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,8 +16,8 @@ class CreateSubscriptionsTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('orderId', 10)->unique();
-            $table->foreign('packageId')->references('packageId')->on('packages');
-            $table->foreign('customerId')->references('customerId')->on('customers');
+            $table->foreign('packageId')->references('id')->on('packages');
+            $table->foreign('customerId')->references('id')->on('customers');
             $table->string('orderDegree', 25);
             $table->string('orderCourse', 100);
             $table->string('orderStatus', 15);
