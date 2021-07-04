@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('frontend.englishacademy');
     }
+
+    public function form_add(Request $request)
+    {
+        
+    }
 }
