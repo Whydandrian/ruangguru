@@ -13,5 +13,12 @@
       <a href="#" class="btn btn-primary">Daftar</a>
     </div>
   </div>
+  <div class="card" style="background-image: url('https://flevix.com/wp-content/uploads/2019/12/Motion-Background.svg');">
+    <div class="card-body">
+      <h5 class="card-title text-white fw-bold">English Skill Academy</h5>
+      <p class="card-text text-white">Kursus Bahasa inggris interaktif dengan pengajar international</p>
+      <a href="#" class="btn btn-primary">Daftar</a>
+    </div>
+  </div>
 </div>
 @endsection
