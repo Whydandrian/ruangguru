@@ -16,7 +16,7 @@ class CreateSubscriptionsTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('orderId', 10)->unique();
-            $table->foreign('productId')->references('productId')->on('products');
+            $table->foreign('packageId')->references('packageId')->on('packages');
             $table->foreign('customerId')->references('customerId')->on('customers');
             $table->string('orderDegree', 25);
             $table->string('orderCourse', 100);
