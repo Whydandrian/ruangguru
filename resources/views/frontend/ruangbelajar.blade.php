@@ -1,30 +1,26 @@
 @extends('layouts.frontend')
 
 @section('content')
-<div class="row d-flex justify-content-center mt-4">
-<div class="row col mb-3 text-center">
-  <span class="d-flex justify-content-center"><h2 class="fw-bold text-dark">Tunggu apa lagi! </h2> <h2 class="fw-bold text-info"> Yuk buruan berlangganan.</h2></span>
-</div>
-<div class="row d-flex justify-content-center">
-  <div class="card col-3 mx-2 ruangbelajar">
-    <div class="card-body">
-      <h5 class="card-title text-white fw-bold">Langganan ruangbelajar</h5>
-      <p class="card-text text-white">Akses semua video, soal dan rangkuman dengan berlangganan!</p>
-      <a href="#" class="btn btn-primary">Daftar</a>
-    </div>
+<div class="row">
+  <div class="row col d-flex text-center">
+    <h2 class="fw-bold text-info">Pilih Kelas Kalian</h2>
   </div>
-  <div class="card col-3 mx-2 englishskill">
-    <div class="card-body">
-      <h5 class="card-title text-white fw-bold">English Skill Academy</h5>
-      <p class="card-text text-white">Kursus Bahasa inggris interaktif dengan pengajar international</p>
-      <a href="#" class="btn btn-primary">Daftar</a>
-    </div>
-  </div>
-  <div class="card col-3 mx-2 skillacademy">
-    <div class="card-body">
-      <h5 class="card-title text-white fw-bold">Skill Academy</h5>
-      <p class="card-text text-white">Tingkatkan technical skill dan softskill untuk mahasiswa, profesional dan umum</p>
-      <a href="#" class="btn btn-primary">Daftar</a>
+  <div class="row">
+    <div class="col">
+      <form >
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Pilih Kelas</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>pilih kelas</option>
+            <option value="sd3">Kelas 1-3 SD</option>
+            <option value="sd6">Kelas 4-6 SD</option>            
+            <option value="sma">SMA IPA/IPS</option>
+            <option value="smk">SMK 10, 11, 12</option>
+            <option value="stanutbk">STAN UTBK</option>
+          </select>
+        </div>  
+        <button type="submit" class="btn btn-primary">Lanjutkan</button>
+      </form>
     </div>
   </div>
 </div>

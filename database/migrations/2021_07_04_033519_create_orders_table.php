@@ -16,8 +16,8 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('orderId', 10)->unique();
-            $table->foreign('packageId')->references('id')->on('packages');
-            $table->foreign('customerId')->references('id')->on('customers');
+            $table->string('packageId', 25);
+            $table->string('customerId');
             $table->string('orderDegree', 25);
             $table->string('orderCourse', 100);
             $table->string('orderStatus', 15);

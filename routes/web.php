@@ -30,6 +30,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/products', [HomeController::class, 'products'])->name('products');
 Route::get('/ruangbelajar', [HomeController::class, 'product_ruangbelajar'])->name('ruangbelajar');
+Route::post('/ruangbelajar_add', [HomeController::class, 'form_add']);
 Route::get('/skillacademy', [HomeController::class, 'product_skillacademy'])->name('skillacademy');
 Route::get('/englishacademy', [HomeController::class, 'product_englishacademy'])->name('englishacademy');
 
