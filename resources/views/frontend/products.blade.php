@@ -1,22 +1,29 @@
 @extends('layouts.frontend')
 
 @section('content')
-<div class="row col px-5 mx-5 mt-4 text-center">
-  <span class="d-flex justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
-  <h2>SD, SMP, SMA, dan SMK</h2>
+<div class="row d-flex justify-content-center mt-4">
+<div class="row col mb-3 text-center">
+  <span class="d-flex justify-content-center"><h2 class="fw-bold text-dark">Tunggu apa lagi! </h2> <h2 class="fw-bold text-info"> Yuk buruan berlangganan.</h2></span>
 </div>
 <div class="row d-flex justify-content-center">
-  <div class="card" style="background-image: url('https://flevix.com/wp-content/uploads/2021/05/Bubble-Background.svg');">
+  <div class="card col-3 mx-2 ruangbelajar">
+    <div class="card-body">
+      <h5 class="card-title text-white fw-bold">Langganan ruangbelajar</h5>
+      <p class="card-text text-white">Akses semua video, soal dan rangkuman dengan berlangganan!</p>
+      <a href="#" class="btn btn-primary">Daftar</a>
+    </div>
+  </div>
+  <div class="card col-3 mx-2 englishskill">
     <div class="card-body">
       <h5 class="card-title text-white fw-bold">English Skill Academy</h5>
       <p class="card-text text-white">Kursus Bahasa inggris interaktif dengan pengajar international</p>
       <a href="#" class="btn btn-primary">Daftar</a>
     </div>
   </div>
-  <div class="card" style="background-image: url('https://flevix.com/wp-content/uploads/2019/12/Motion-Background.svg');">
+  <div class="card col-3 mx-2 skillacademy">
     <div class="card-body">
-      <h5 class="card-title text-white fw-bold">English Skill Academy</h5>
-      <p class="card-text text-white">Kursus Bahasa inggris interaktif dengan pengajar international</p>
+      <h5 class="card-title text-white fw-bold">Skill Academy</h5>
+      <p class="card-text text-white">Tingkatkan technical skill dan softskill untuk mahasiswa, profesional dan umum</p>
       <a href="#" class="btn btn-primary">Daftar</a>
     </div>
   </div>

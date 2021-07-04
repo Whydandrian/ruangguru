@@ -1,8 +1,9 @@
 @extends('layouts.frontend')
 
 @section('content')
-<div class="row col px-5 mx-5 mt-4 text-center">
-  <span class="d-flex justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
+<div class="row d-flex mt-4 mx-4 justify-content-center">
+<div class="row col text-center ">
+  <span class="d-flex px-5 mx-5 mt-4 justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
   <h2>SD, SMP, SMA, dan SMK</h2>
 </div>
 <div class="row px-5 mx-5 mt-4">
@@ -72,5 +73,6 @@
           </div>
         </div>
   </div>
+</div>
 </div>
 @endsection
