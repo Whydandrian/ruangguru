@@ -18,8 +18,6 @@ class CreateOrdersTable extends Migration
             $table->string('orderId', 10)->unique();
             $table->string('packageId', 25);
             $table->string('customerId');
-            $table->string('orderDegree', 25);
-            $table->string('orderCourse', 100);
             $table->string('orderStatus', 15);
             $table->timestamps();
         });

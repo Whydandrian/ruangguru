@@ -18,7 +18,6 @@ class CreatePackagesTable extends Migration
             $table->string('packageId', 25)->unique();
             $table->string('packageName', 75)->unique();
             $table->enum('packageTag', ['englishacademy', 'skillacademy', 'ruangguru']);
-            $table->string('packageEligibleUser', 8);
             $table->timestamps();
         });
     }
