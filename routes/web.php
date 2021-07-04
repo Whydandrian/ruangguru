@@ -29,6 +29,9 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [HomeController::class, 'index'])->name('');
 
 Route::get('/products', [HomeController::class, 'products'])->name('products');
+Route::get('/ruangbelajar', [HomeController::class, 'product_ruangbelajar'])->name('ruangbelajar');
+Route::get('/skillacademy', [HomeController::class, 'product_skillacademy'])->name('skillacademy');
+Route::get('/englishacademy', [HomeController::class, 'product_englishacademy'])->name('englishacademy');
 
 Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
 
