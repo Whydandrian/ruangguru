@@ -1,9 +1,9 @@
 @extends('layouts.frontend')
 
 @section('content')
-<div class="row d-flex mt-4 justify-content-center">
+<div class="row d-flex justify-content-center">
 <div class="row col text-center ">
-  <span class="d-flex mt-4 justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
+  <span class="d-flex justify-content-center"><h2 class="fw-bold text-info inline">Solusi belajar online terlengkap </h2> <h2 class="fw-bold ml-1"> untuk</h2></span>
   <h2>SD, SMP, SMA, dan SMK</h2>
 </div>
 <div class="row mt-4">
