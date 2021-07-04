@@ -13,13 +13,14 @@ class CreateSubscriptionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('subscriptions', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('subscriptionId', 10)->unique();
+            $table->string('orderId', 10)->unique();
             $table->foreign('productId')->references('productId')->on('products');
             $table->foreign('customerId')->references('customerId')->on('customers');
-            $table->string('subscriptionDegree', 25);
-            $table->string('subscriptionCourse', 100);
+            $table->string('orderDegree', 25);
+            $table->string('orderCourse', 100);
+            $table->string('orderStatus', 15);
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateSubscriptionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subscriptions');
+        Schema::dropIfExists('orders');
     }
 }

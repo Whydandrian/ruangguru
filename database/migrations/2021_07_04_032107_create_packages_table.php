@@ -13,12 +13,12 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('packages', function (Blueprint $table) {
             $table->id();
-            $table->string('productId', 25)->unique();
-            $table->string('productName', 75)->unique();
-            $table->enum('productTag', ['englishacademy', 'skillacademy', 'ruangguru']);
-            $table->string('productEligibleUser', 8);
+            $table->string('packageId', 25)->unique();
+            $table->string('packageName', 75)->unique();
+            $table->enum('packageTag', ['englishacademy', 'skillacademy', 'ruangguru']);
+            $table->string('packageEligibleUser', 8);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('packages');
     }
 }
