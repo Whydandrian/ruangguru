@@ -10,7 +10,7 @@ class Order extends Model
     use HasFactory;
     protected $fillable = [
     'orderId','packageId',
-    'customerId','orderCourse',
+    'customerId',
     'orderStatus','orderId',
     ];
     public $timestamps = false;
