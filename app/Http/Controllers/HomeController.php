@@ -18,16 +18,16 @@ class HomeController extends Controller
 
     public function product_ruangbelajar()
     {
-        
+        return view('frontend.ruangbelajar');
     }
 
     public function product_skillacademy()
     {
-        
+        return view('frontend.skillacademy');
     }
 
     public function product_englishacademy()
     {
-        
+        return view('frontend.englishacademy');
     }
 }
