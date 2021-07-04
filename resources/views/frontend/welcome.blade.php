@@ -14,7 +14,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><img src="https://www.ruangguru.com/hubfs/1%20Homepage%20RG/logotype_rubel_L.svg" alt=""></h5>
                   <p class="card-text">Belajar mandiri dengan puluhan ribu video belajar beranimasi dan latihan soal. Bisa di-download, hemat kuota!</p>
-                  <button class="btn btn-warning rounded-pill " type="submit" style=""><span class="fw-bold text-white">Langganan Sekarang <i class="fas fa-arrow-right"></i></span></button>
+                  <a href="{{route('ruangbelajar')}}" class="btn btn-warning rounded-pill "><span class="fw-bold text-white">Langganan Sekarang <i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
             <div class="col-md-4">
@@ -30,7 +30,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><img src="https://www.ruangguru.com/hubfs/1%20Homepage%20RG/logotype_BAO_L.svg" alt=""></h5>
                   <p class="card-text">Belajar mandiri dengan puluhan ribu video belajar beranimasi dan latihan soal. Bisa di-download, hemat kuota!</p>
-                  <button class="btn btn-warning rounded-pill " type="submit" style=""><span class="fw-bold text-white">Langganan Sekarang <i class="fas fa-arrow-right"></i></span></button>
+                  <a href="{{route('ruangbelajar')}}" class="btn btn-warning rounded-pill "><span class="fw-bold text-white">Langganan Sekarang <i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
             <div class="col-md-4">
@@ -48,7 +48,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><img src="https://www.ruangguru.com/hubfs/1%20Homepage%20RG/ENGLISH%20ACADEMY-LOGO2%201.png" alt=""></h5>
                   <p class="card-text">Belajar mandiri dengan puluhan ribu video belajar beranimasi dan latihan soal. Bisa di-download, hemat kuota!</p>
-                  <button class="btn btn-info rounded-pill " type="submit" style=""><span class="fw-bold text-white">Lihat Lebih Lengkap <i class="fas fa-arrow-right"></i></span></button>
+                  <a href="{{route('englishacademy')}}" class="btn btn-info rounded-pill "><span class="fw-bold text-white">Lihat Lebih Lengkap <i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
             <div class="col-md-4">
@@ -64,7 +64,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><img src="https://www.ruangguru.com/hubfs/1%20Homepage%20RG/logotype_SA_L.svg" alt=""></h5>
                   <p class="card-text">Belajar mandiri dengan puluhan ribu video belajar beranimasi dan latihan soal. Bisa di-download, hemat kuota!</p>
-                  <button class="btn btn-info rounded-pill " type="submit" style=""><span class="fw-bold text-white">Lihat Lebih Lengkap <i class="fas fa-arrow-right"></i></span></button>
+                  <a href="{{route('skillacademy')}}" class="btn btn-info rounded-pill "><span class="fw-bold text-white">Lihat Lebih Lengkap <i class="fas fa-arrow-right"></i></span></a>
                 </div>
               </div>
             <div class="col-md-4">
